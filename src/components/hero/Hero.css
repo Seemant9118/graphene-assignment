@@ -1,0 +1,99 @@
+.Hero {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Hero-Title {
+    width: 50%;
+    margin-top: 10rem;
+}
+
+.Hero-Title>div {
+    width: 43.0625rem;
+    height: 9.4375rem;
+}
+
+.Hero-Title>:nth-child(1) {
+    position: relative;
+    z-index: 1;
+}
+
+.Hero-Title>:nth-child(2) {
+    position: relative;
+    z-index: 1;
+    left: 20rem;
+}
+
+.Hero-Title>:nth-child(3) {
+    position: relative;
+    z-index: 1;
+    left: 8rem;
+}
+
+.Hero-Title>:nth-child(4) {
+    position: relative;
+    z-index: 1;
+    bottom: 3rem;
+}
+
+.FRESH>h1,
+.LOOK>h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 10.4375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.1rem;
+    font-stretch: 100%;
+
+}
+
+.YEAR>h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 10.4375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.1rem;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: transparent;
+}
+
+.Hero-Container {
+    width: 30%;
+    height: 100vh;
+}
+
+.starImage{
+    position: absolute;
+    top: 11rem;
+}
+.HeroImage{
+    width: 27rem;
+    height: 40.93444rem;
+    flex-shrink: 0;
+    position: absolute;
+    top: 10rem;
+    right: 16rem;
+}
+
+.HeroDetail{
+    color: black;
+    position: absolute;
+    right: 8rem;
+    bottom: 3rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+.orange-container {
+    width: 63.9888rem;
+    height: 24.14381rem;
+    background: var(--Pimary-colour, #F07E15);
+    position: relative;
+    right: 26rem;
+    top: 13rem;
+}
