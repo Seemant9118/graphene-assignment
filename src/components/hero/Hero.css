@@ -39,7 +39,10 @@
     position: relative;
     z-index: 1;
     bottom: 3rem;
+    color: white;
+    border: 1px solid white;
 }
+
 
 .FRESH>h1,
 .LOOK>h1 {
@@ -49,7 +52,7 @@
     font-weight: 700;
     line-height: 0.1rem;
     font-stretch: 100%;
-
+    color: white;
 }
 
 .YEAR>h1 {

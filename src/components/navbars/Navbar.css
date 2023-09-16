@@ -65,10 +65,10 @@
 
 .headline>p {
     font-size: 2.5rem;
-    font-style:normal;
+    font-style: normal;
     font-weight: 100;
     line-height: normal;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .pair-carts {
@@ -82,14 +82,20 @@
 }
 
 /* Line Image Div */
-.divider{
+.divider {
     background-color: rgb(18, 18, 18);
     display: flex;
     justify-content: center;
 }
 
+.divider>svg {
+    position: absolute;
+    left: 31.5rem;
+    top: 6.6rem;
+}
+
 /* Navigation bar - 3rd nav */
-.navigation-nav {
+.navigator-nav {
     background-color: rgb(18, 18, 18);
     display: flex;
     justify-content: center;
@@ -105,10 +111,45 @@
     justify-content: flex-start;
     list-style: none;
     gap: 8rem;
-    color: #FFF;
+}
+
+.navitems-group>li {
+    color: white;
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+}
+
+
+/* Media Screening to create responsiveness of web app */
+@media screen and (max-width:420px) {
+    .shorter_nav {
+        gap: 3rem;
+    }
+    .left-side {
+        width: 65%;
+    }
+    .right-side {
+        width: 25%;
+        gap: 1rem;
+    }
+    .right-side>:nth-child(2){
+        display: none;
+    }
+    .icons-list{
+        gap: 1rem;
+    }
+    .medium-nav{
+        border: 2px solid lavender;
+        justify-content: flex-start;
+    }
+    .medium-nav>.pair-carts{
+        display: none;
+    }
+    .navigator-nav{
+        display: none;
+    }
+
 }
