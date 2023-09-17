@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow: hidden;
 }
 
 .Hero-Title {
@@ -70,11 +71,12 @@
     height: 100vh;
 }
 
-.starImage{
+.starImage {
     position: absolute;
     top: 11rem;
 }
-.HeroImage{
+
+.HeroImage {
     width: 27rem;
     height: 40.93444rem;
     flex-shrink: 0;
@@ -83,7 +85,7 @@
     right: 16rem;
 }
 
-.HeroDetail{
+.HeroDetail {
     color: black;
     position: absolute;
     right: 8rem;
@@ -99,4 +101,47 @@
     position: relative;
     right: 26rem;
     top: 13rem;
+}
+
+
+@media screen and (max-width:420px) {
+    .Hero{
+        height: 83vh;
+    }
+    .Hero-Title>div {
+        width: fit-content;
+    }
+    .FRESH>h1,
+    .YEAR>h1,
+    .LOOK>h1 {
+        width: fit-content;
+        font-size: 3.4375rem;
+        font-weight: 800;
+        line-height: 125.6%;
+    }
+    .Hero-Title>:nth-child(1) {
+        top: 10rem;
+    }
+    .Hero-Title>:nth-child(2) {
+        top: 4rem;
+        left: 3.8rem;
+    }
+    .Hero-Title>:nth-child(3) {
+        bottom: 2.2rem;
+        left: 1rem;
+    }
+    .orange-container {
+        width: 46.11588rem;
+        height: 20.26213rem;
+    }
+    .HeroImage{
+        left: 4rem;
+    }
+    .starImage{
+        left: 11rem;
+        top: 9rem;
+    }
+    .HeroDetail{
+        display: none;
+    }
 }

@@ -1,7 +1,9 @@
 .getInTouch {
     height: 80vh;
     background-image: url('../../asserts/TouchBG.png');
+    overflow: hidden;
 }
+
 .first {
     height: 60%;
     display: flex;
@@ -9,12 +11,14 @@
     justify-content: center;
     align-items: center;
 }
+
 .caption {
     width: 30%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
 .caption>p {
     color: var(--Grey-Scale-200, rgba(255, 255, 255, 0.50));
     font-family: 'Syne', sans-serif;
@@ -23,6 +27,7 @@
     font-weight: 600;
     line-height: normal;
 }
+
 .caption>span {
     width: 20rem;
     color: var(--Grey-Scale-200, rgba(255, 255, 255, 0.50));
@@ -32,15 +37,18 @@
     font-weight: 400;
     line-height: normal;
 }
+
 .form {
     width: 50%;
 }
+
 form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
 }
+
 form>input {
     border: none;
     background-color: transparent;
@@ -53,15 +61,18 @@ form>input {
     line-height: normal;
     margin: 2px;
 }
+
 form>input:focus {
     outline: none;
 }
+
 .second {
     height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .head {
     width: 80%;
     display: flex;
@@ -69,10 +80,10 @@ form>input:focus {
     justify-content: center;
     gap: 0.5rem;
 }
+
 .head>span {
     display: inline-block;
     transform: scale(1.6, 1);
-    /* border: 2px solid olive; */
     color: var(--Grey-scale-000, #FFF);
     font-family: 'Syne', sans-serif;
     font-size: 8.4375rem;
@@ -81,13 +92,15 @@ form>input:focus {
     line-height: 6.4125rem;
     margin-left: 15rem;
 }
+
 .second>svg {
     position: absolute;
     right: 8rem;
 }
+
 .send {
     color: var(--Pimary-colour, #F07E15);
-    font-family: 'Work Sans',sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 1.625rem;
     font-style: normal;
     font-weight: 400;
@@ -95,4 +108,42 @@ form>input:focus {
     position: relative;
     right: 4rem;
     top: 5rem;
+}
+
+@media screen and (max-width:420px) {
+    .first {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .caption {
+        width: 80%;
+        text-align: center;
+        gap: 1rem;
+    }
+    .form {
+        width: 80%;
+    }
+    .head {
+        width: 80%;
+        gap: 1rem;
+    }
+    .head>span {
+        transform: scale(1.6, 1.2);
+        font-size: 3.4375rem;
+        line-height: 67.6%;
+        position: relative;
+        right: 13rem;
+    }
+    .second>svg {
+        width: 9rem;
+        top: 134rem;
+        right: 1rem;
+    }
+    .send {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 0.57456rem;
+        top: 6.5rem;
+        right: 3rem;
+    }
 }

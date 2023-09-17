@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import Line from '../../asserts/Line.png';
-
+import menu from '../../asserts/HamburgerMenu.svg';
 
 const Navbar = () => {
     const navbar = [
@@ -66,6 +66,9 @@ const Navbar = () => {
                 <div className="pair-carts">
                     <span>WISHLIST(0)</span>
                     <span>BAG(0)</span>
+                </div>
+                <div className='hamburger-menu'>
+                    <img src={menu} alt='option-menu'/>
                 </div>
             </div>
             <div className='divider'>

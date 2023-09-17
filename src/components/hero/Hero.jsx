@@ -2,6 +2,7 @@ import React from 'react';
 import './Hero.css';
 import HeroImage from '../../asserts/HeroImage.png';
 import Star from '../../asserts/Star 3.png';
+
 const Hero = () => {
     return (
         <div className='Hero'>
