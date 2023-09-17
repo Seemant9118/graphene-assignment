@@ -12,11 +12,9 @@
     justify-content: center;
     align-items: center;
 }
-
 .headline-product {
     width: 40%;
 }
-
 .headline-product>h2 {
     color: var(--Grey-scale-1000, #000);
     font-family: 'Syne', sans-serif;
@@ -25,13 +23,11 @@
     font-weight: 600;
     line-height: normal;
 }
-
 .headline-product>svg {
     position: absolute;
-    left: 9rem;
-    top: 66.9rem;
+    left: 10rem;
+    top: 74.01rem;
 }
-
 .lines {
     width: 40%;
     display: flex;
@@ -85,6 +81,7 @@
     flex-direction: row;
 }
 
+/* Media Screening to create responsiveness of web app */
 @media screen and (max-width:420px) {
     .headline-product {
         width: 80%;
@@ -95,8 +92,8 @@
         line-height: 125.6%;
     }
     .headline-product>svg {
-        top: 58.4rem;
-        left: 1.4rem;
+        top: 61.1rem;
+        left: 2.2rem;
     }
     .lines {
         position: absolute;

@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import Line from '../../asserts/Line.png';
 import menu from '../../asserts/HamburgerMenu.svg';
+import HamburgerList from '../../util-helper-components/HamburgerList';
 
 const Navbar = () => {
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen);
+    }
+
     const navbar = [
         { name: 'Home', id: 'home' },
         { name: 'About', id: 'about' },
@@ -59,6 +66,7 @@ const Navbar = () => {
                     </span>
                 </div>
             </div>
+            
             <div className='medium-nav'>
                 <div className="headline">
                     <p>ShopKart</p>
@@ -67,10 +75,17 @@ const Navbar = () => {
                     <span>WISHLIST(0)</span>
                     <span>BAG(0)</span>
                 </div>
-                <div className='hamburger-menu'>
-                    <img src={menu} alt='option-menu'/>
+                {/* Toggle Menu Bar - Mobile */}
+                <div className='hamburger-menu' onClick={toggleHamburger}>
+                    {!hamburgerOpen ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 5L5 19M5.00003 5L19 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <rect x="0.5" y="0.5" width="23" height="23" stroke="white" />
+                    </svg> : <img src={menu} alt='menu' />}
+
+                    {!hamburgerOpen ? <HamburgerList navbar={navbar} /> : ''};
                 </div>
             </div>
+            
             <div className='divider'>
                 <img className="line" src={Line} alt='LineImage' />
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -85,6 +100,7 @@ const Navbar = () => {
                     }
                 </ul>
             </div>
+
         </>
     )
 }

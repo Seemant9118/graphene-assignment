@@ -14,7 +14,7 @@ const GetInTouch = () => {
                     <form>
                         <input type='text' name='name' placeholder='NAME' />
                         <img src={LineBottom} alt='Line' />
-                        <input type='text' name='email' placeholder='EMAIL' />
+                        <input type='text' name='mail' placeholder='EMAIL' style={{color:"rgba(255, 255, 255, 0.50)"}}/>
                         <img src={LineBottom} alt='Line' />
                         <input type='text' name='message' placeholder='MESSAGE' />
                         <img src={LineBottom} alt='Line' />

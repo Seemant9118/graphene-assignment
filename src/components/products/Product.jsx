@@ -16,8 +16,6 @@ const Product = () => {
     if (error) return <div>Request Failed</div>;
     if (isLoading) return <div>Loading...</div>;
 
-    console.log(data);
-
     return (
         <div className='Product-Container'>
             <div className='header-Product'>
